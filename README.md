@@ -2,7 +2,7 @@
 
 
 
-### EasiTimerBackupReforged's File Upload Server
+### [EasyTimerBackupReforged](https://github.com/SleepingCui/EasYTimerBackupReforged)'s File Upload Server
 
 
 
