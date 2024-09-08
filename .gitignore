@@ -30,3 +30,4 @@ bin/
 
 config.cfg
 uploads
+/logs/

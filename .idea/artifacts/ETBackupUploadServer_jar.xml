@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ETBackupUploadServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ETBackupUploadServer_jar</output-path>
+    <root id="archive" name="ETBackupUploadServer.jar">
+      <element id="module-output" name="ETBackupUploadServer" />
+    </root>
+  </artifact>
+</component>

@@ -1,9 +1,13 @@
 package com.etbkreforged.server;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import java.io.*;
 import java.net.Socket;
 
 public class server {
+    private static final Logger LOGGER = LogManager.getLogger(server.class);
     public static final String UPLOAD_DIR = config_process.get_config("path")+"\\"; // Directory to save uploaded files
 
     public static void handleClient(Socket clientSocket) {
@@ -28,11 +32,11 @@ public class server {
                 }
 
                 bos.flush();
-                System.out.println("INFO: File received: " + fileName + ", size: " + totalBytes + " bytes");
+                LOGGER.info("File received: " + fileName + ", size: " + totalBytes + " bytes");
 
                 // Send confirmation message to client
                 OutputStream out = clientSocket.getOutputStream();
-                String confirmationMessage = "INFO: File upload successful, size: " + totalBytes + " bytes";
+                String confirmationMessage = "\nFile upload successful, size: " + totalBytes + " bytes";
                 out.write(confirmationMessage.getBytes());
                 out.flush();
             }
