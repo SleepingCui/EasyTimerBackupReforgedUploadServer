@@ -36,7 +36,7 @@ public class server {
 
                 // Send confirmation message to client
                 OutputStream out = clientSocket.getOutputStream();
-                String confirmationMessage = "\nFile upload successful, size: " + totalBytes + " bytes";
+                String confirmationMessage = "File upload successful, size: " + totalBytes + " bytes";
                 out.write(confirmationMessage.getBytes());
                 out.flush();
             }
