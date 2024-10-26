@@ -1,4 +1,10 @@
-# This repository is archived!
+# Archived Repository
+
+
+This repository has been archived and is now read-only. No further updates or maintenance will be provided.
+
+If you are looking for similar projects or need continued support, please refer to [link](https://github.com/SleepingCui/EasYTimerBackupReforged).
+
 
 
 
